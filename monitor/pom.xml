@@ -6,7 +6,6 @@
         <groupId>com.guppy</groupId>
         <artifactId>tiny</artifactId>
         <version>1.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>monitor</artifactId>
