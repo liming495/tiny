@@ -13,3 +13,19 @@ services:
     image: tiny/config
     ports:
       - "8888:8888"
+  monitor:
+    image: tiny/monitor
+    ports:
+      - "8040:8040"
+  zipkin:
+    image: tiny/zipkin
+    ports:
+      - "9411:9411"
+  gateway:
+    image: tiny/gateway
+    ports:
+      - "8060:8060"
+  auth-service:
+    image: tiny/auth-service
+    ports:
+      - "5000:5000"
