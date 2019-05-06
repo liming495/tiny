@@ -92,6 +92,9 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
+                <configuration>
+                    <dockerHost>http://localhost:2375</dockerHost>
+                </configuration>
             </plugin>
         </plugins>
     </build>
