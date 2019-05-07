@@ -26,8 +26,14 @@ public class ServiceAController {
     @GetMapping(value = "/")
     public String printServiceA(){
         ServiceInstance serviceInstance = discoveryClient.getLocalServiceInstance();
-        return serviceInstance.getServiceId() + " (" + serviceInstance.getHost() + ":" + serviceInstance.getPort()
-                + ") ===>name:" + name + "<br/>" + serviceBClient.printServiceB();
+        return serviceInstance.getServiceId()
+                + " (" + serviceInstance.getHost()
+                + ":"
+                + serviceInstance.getPort()
+                + ") ===>name:"
+                + name
+                + "<br/>"
+                + serviceBClient.printServiceB();
     }
 
     @GetMapping(path = "/current")
