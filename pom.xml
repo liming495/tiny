@@ -23,6 +23,8 @@
         <module>gateway</module>
         <module>monitor</module>
         <module>auth-service</module>
+        <module>a-service</module>
+        <module>b-service</module>
         <module>zipkin</module>
     </modules>
 

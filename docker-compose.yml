@@ -29,3 +29,7 @@ services:
     image: tiny/auth-service
     ports:
       - "5000:5000"
+  a-service:
+    image: tiny/a-service
+  b-service:
+    image: tiny/b-service

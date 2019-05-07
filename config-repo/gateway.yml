@@ -25,8 +25,8 @@ zuul:
       stripPrefix: false
       sensitiveHeaders:
     svca-service:
-      path: /svca/**
+      path: /logic/a/**
       sensitiveHeaders:
     svcb-service:
-      path: /svcb/**
+      path: /logic/b/**
       sensitiveHeaders:
