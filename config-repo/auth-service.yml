@@ -20,3 +20,6 @@ spring:
     driver-class-name: org.h2.Driver
   jpa:
     show-sql: true
+  cloud:
+    inetutils:
+      preferred-networks: 192.168.0
