@@ -33,3 +33,7 @@ services:
     image: tiny/a-service
   b-service:
     image: tiny/b-service
+  d1-service:
+    image: tiny/d1-service
+  d2-service:
+    image: tiny/d2-service

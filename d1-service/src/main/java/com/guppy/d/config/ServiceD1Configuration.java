@@ -1,4 +1,4 @@
-package com.guppy.a.config;
+package com.guppy.d.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 @Configuration
 @EnableResourceServer
 @EnableGlobalMethodSecurity(prePostEnabled = true, jsr250Enabled = true)
-public class ServiceAConfiguration extends ResourceServerConfigurerAdapter {
+public class ServiceD1Configuration extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {

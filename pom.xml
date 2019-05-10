@@ -25,6 +25,8 @@
         <module>auth-service</module>
         <module>a-service</module>
         <module>b-service</module>
+        <module>d1-service</module>
+        <module>d2-service</module>
         <module>zipkin</module>
     </modules>
 
