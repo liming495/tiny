@@ -20,8 +20,3 @@ security:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
       grant-type: client_credentials
       scope: server
-      
-spring:
-  cloud:
-    inetutils:
-      preferred-networks: 192.168.0
