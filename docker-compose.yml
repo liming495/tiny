@@ -37,3 +37,5 @@ services:
     image: tiny/d1-service
   d2-service:
     image: tiny/d2-service
+  d3-service:
+    image: tiny/d3-service
