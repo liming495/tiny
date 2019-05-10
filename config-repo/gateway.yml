@@ -30,3 +30,8 @@ zuul:
     b-service:
       path: /logic/b/**
       sensitiveHeaders:
+
+spring:
+  cloud:
+    inetutils:
+      preferred-networks: 192.168.0
