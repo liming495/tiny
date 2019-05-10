@@ -83,13 +83,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
+<!--            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
                     <dockerHost>http://localhost:2375</dockerHost>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
