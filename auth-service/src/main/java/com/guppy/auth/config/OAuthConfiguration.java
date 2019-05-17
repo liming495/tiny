@@ -33,14 +33,12 @@ public class OAuthConfiguration extends AuthorizationServerConfigurerAdapter {
     }
 
     @Override
-    public void configure(AuthorizationServerSecurityConfigurer security)
-            throws Exception {
+    public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security.passwordEncoder(passwordEncoder);
     }
 
     @Override
-    public void configure(AuthorizationServerEndpointsConfigurer endpoints)
-            throws Exception {
+    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints
                 .authenticationManager(auth)
                 .tokenStore(tokenStore())
@@ -48,8 +46,7 @@ public class OAuthConfiguration extends AuthorizationServerConfigurerAdapter {
     }
 
     @Override
-    public void configure(ClientDetailsServiceConfigurer clients)
-            throws Exception {
+    public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
         clients.jdbc(dataSource)
                 .passwordEncoder(passwordEncoder)
@@ -60,13 +57,25 @@ public class OAuthConfiguration extends AuthorizationServerConfigurerAdapter {
                 .accessTokenValiditySeconds(3600) // 1 hour
                 .refreshTokenValiditySeconds(2592000) // 30 days
                 .and()
-                .withClient("svca-service")
+                .withClient("a-service")
                 .secret("password")
                 .authorizedGrantTypes("client_credentials", "refresh_token")
                 .scopes("server")
                 .and()
-                .withClient("svcb-service")
+                .withClient("b-service")
                 .secret("password")
+                .authorizedGrantTypes("client_credentials", "refresh_token")
+                .scopes("server")
+                .and()
+                .withClient("d1-service")
+                .authorizedGrantTypes("client_credentials", "refresh_token")
+                .scopes("server")
+                .and()
+                .withClient("d2-service")
+                .authorizedGrantTypes("client_credentials", "refresh_token")
+                .scopes("server")
+                .and()
+                .withClient("d3-service")
                 .authorizedGrantTypes("client_credentials", "refresh_token")
                 .scopes("server")
         ;
