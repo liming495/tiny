@@ -38,4 +38,4 @@ zuul:
       sensitiveHeaders:
     d3-service:
       path: /logic/d/3/**
-      sendsitiveHeaders:
+      sensitiveHeaders:
