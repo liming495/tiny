@@ -21,7 +21,7 @@ public class ServiceAController {
     @Autowired
     EurekaDiscoveryClient discoveryClient;
     @Autowired
-    ServiceBClient serviceBClient;
+    private ServiceBClient serviceBClient;
 
     @GetMapping(value = "/")
     public String printServiceA(){
