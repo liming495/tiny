@@ -18,9 +18,9 @@ public class ServiceD3Controller {
     @Autowired
     EurekaDiscoveryClient discoveryClient;
     @Autowired
-    private ServiceD1Client serviceD1Client;
+    ServiceD1Client serviceD1Client;
     @Autowired
-    private ServiceBClient serviceBClient;
+    ServiceBClient serviceBClient;
 
 
     @GetMapping(value = "/")
