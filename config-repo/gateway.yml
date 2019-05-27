@@ -26,6 +26,7 @@ zuul:
       sensitiveHeaders:
     a-service:
       path: /logic/a/**
+      stripPrefix: false
       sensitiveHeaders:
     b-service:
       path: /logic/b/**
@@ -36,3 +37,7 @@ zuul:
     d2-service:
       path: /logic/d/2/**
       sensitiveHeaders:
+    d3-service:
+      path: /logic/d/3/**
+      stripPrefix: false
+      sendsitiveHeaders:
